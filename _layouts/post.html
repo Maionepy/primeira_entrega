@@ -1,5 +1,34 @@
 ---
 layout: default
 ---
-{{ content }}
-<p>Postado no dia {{ page.date }} na categoria {{ page.categories }}</p>
+
+<body>
+    <header id="cabecalho-principal">
+        <h1 id="titulo_pag">Review de Mercados</h1>
+    </header>
+    <nav id="navegacao-principal">
+        <ul>
+        <header><img src ="{{ '/assets/images/sample-logo.jpg' | relative_url }}" id='sample-logo'></header>
+        <li><a href="{{ '/index' | relative_url }}">Home</a></li>
+        <li><a href="{{ '/sobre_nos' | relative_url }}">Sobre Nós</a></li>
+        <li><a href="{{ '/sp' | relative_url }}">São Paulo</a></li>
+        <li><a href="{{ '/rio' | relative_url }}">Rio de Janeiro</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="posts">
+            <article class="article-1">
+                <header>
+                    <h2>{{ page.title }}</h2>
+                </header>
+                <p>{{ page.content }}</p>
+                <footer>
+                    <p>{{ page.author }} ({{ page.date | date: "%d/%m/%Y" }})</p>
+                </footer>
+            </article>
+        </section>
+    </main>
+    <footer id="rodape-principal">
+        Informações de Copyright 2020
+    </footer>
+</body>

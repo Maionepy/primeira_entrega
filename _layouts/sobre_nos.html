@@ -4,11 +4,11 @@ layout: default
 
 <body>
     <header id="cabecalho-principal">
-        <h1 id="titulo_pag">Review de Mercados</h1>
+        <a href="{{ '/index' | relative_url }}"><h1 id="titulo_pag">Review de Mercados</h1></a>
     </header>
     <nav id="navegacao-principal">
         <ul>
-        <header><img src ="{{ '/assets/images/sample-logo.jpg' | relative_url }}" id='sample-logo'></header>
+        <header><a href="{{ '/index' | relative_url }}"><img src ="{{ '/assets/images/sample-logo.jpg' | relative_url }}" id='sample-logo'></a></header>
         <li><a href="{{ '/index' | relative_url }}">Home</a></li>
         <li><a href="{{ '/sobre_nos' | relative_url }}">Sobre Nós</a></li>
         <li><a href="{{ '/sp' | relative_url }}">São Paulo</a></li>
@@ -19,8 +19,8 @@ layout: default
         <section class="posts">
             <article class="article-1">
                 <header>
-                    <h1>Nós somos um grupo fictício criado por Bruno Maione para a primeira entrega de Sistemas de Informação</h1>
-                    <p>Obrigado pela curiosidade de nos visitar!</p>
+                    <h2>Nós somos um grupo fictício criado por Bruno Maione para a primeira entrega de Sistemas de Informação!</h2>
+                    <h3>Obrigado pela curiosidade de nos visitar!</p></h3>
                 </header>
                 <img src="{{ '/assets/images/sobre_nos_pic.png' | relative_url }}" id='sobre_nos_pic' alt="random unsplash"/>
                 <footer>

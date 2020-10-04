@@ -1,9 +1,11 @@
 ---
 layout: post
-title:  "DIA Supermercado"
+title:  "DIA Supermercados"
 date:   2020-08-08 19:56:19 -0300
 categories: sp
 author: "Bruno Maione"
 local: "São Paulo"
 ---
-São Paulo
+Espalhadas pela cidade, as lojas da rede de supermercados Dia% costumam atender aquele grupo de pessoas que precisa de compras rápidas de itens essenciais, na maioria da vezes, a preços atraentes.
+
+Entre as opções, há produtos de marca própria, que normalmente saem mais em conta. Estão nessa lista pão de forma, requeijão, iogurte, sucos de caixinha e biscoitos. Tem até creme de avelã, que não é tão essencial assim, mas para os fãs de açúcar se mostra primordial. 

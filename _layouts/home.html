@@ -3,11 +3,11 @@ layout: default
 ---
 <body>
     <header id="cabecalho-principal">
-        <h1 id="titulo_pag">Review de Mercados</h1>
+        <a href="{{ '/index' | relative_url }}"><h1 id="titulo_pag">Review de Mercados</h1></a>
     </header>
     <nav id="navegacao-principal">
         <ul>
-        <header><img src ="{{ '/assets/images/sample-logo.jpg' | relative_url }}" id='sample-logo'></header>
+        <header><a href="{{ '/index' | relative_url }}"><img src ="{{ '/assets/images/sample-logo.jpg' | relative_url }}" id='sample-logo'></a></header>
         <li><a href="{{ '/index' | relative_url }}">Home</a></li>
         <li><a href="{{ '/sobre_nos' | relative_url }}">Sobre Nós</a></li>
         <li><a href="{{ '/sp' | relative_url }}">São Paulo</a></li>
@@ -20,7 +20,7 @@ layout: default
             <article>
                 <header>
                     <h1>{{ post.title }}</h1>
-                    <p>{{ post.date }}</p>
+                    <p>{{ post.date | date: "%d/%m/%Y" }}</p>
                 </header>
                 <a class="click_here" href="{{ post.url | relative_url }}">Clique aqui para ler a review</a>
                 <footer>
@@ -30,7 +30,7 @@ layout: default
             {% endfor %}
         </section>
         <aside id="sidebar">
-            <p>Não existe uma pessoa que não tenha tido uma experiência ruim em um Mercado! Este blog existe para ajudá-lo a nunca mais ter uma dessas.</p>
+            <p>Não existe uma pessoa que não tenha tido uma experiência ruim em um Mercado! Este blog existe para ajudá-lo a nunca mais sofrer com isso.</p>
             <img src="{{ '/assets/images/icone-carrinho.png' | relative_url }}" id='icone-carrinho'>
         </aside>
     </main>
