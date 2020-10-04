@@ -75,8 +75,9 @@ main {
     align-self: center;
     width: calc(100% - 60px);
     display: grid;
+    grid-template-columns: 1fr 1fr;
 
-    grid-template-areas: "bx3 bx2"  "bx1 bx2";
+    grid-template-areas: "bx3 bx2" "bx1 bx2";
 }
  
 .posts {
@@ -111,15 +112,15 @@ article img {
 }
  
 aside {
+    position: relative;
     margin: 50px 30px;
-    height: 80%;
-    max-width: 50%;
-    translate: 75%;
+    max-height: 60%;
+    max-width: 60%;
+    translate: 25%;
     border: 15px  solid var(--secondary-background);
     background-color: var(--tertiary-background);
     color: var(--secondary-color);
     grid-area: bx2;
-    text-align: center;
     border-radius: 15%;
 }
  
@@ -148,8 +149,9 @@ footer#rodape-principal{
 
 #icone-carrinho{
     filter: invert(100%);
-    scale: 50%;
+    scale: 90%;
     width: 100%;
+    height: 100%;
     display: block;
     margin-top: auto;
     margin-bottom: auto;
@@ -172,4 +174,18 @@ li a{
 
 li a:hover {
     color:var(--tertiary-background);
+}
+
+@media only screen and (max-width: 768px) {
+    main {
+        grid-template-columns: auto;
+        grid-template-areas: "bx3" "bx2";
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .posts {
+        grid-template-columns: auto;
+        grid-template-areas: "bx3" "bx2";
+    }
 }
