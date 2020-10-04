@@ -1,0 +1,39 @@
+---
+layout: default
+---
+
+<body>
+    <header id="cabecalho-principal">
+        <h1 id="titulo_pag">Review de Mercados</h1>
+    </header>
+    <nav id="navegacao-principal">
+        <ul>
+        <header><img src ="{{ '/assets/images/sample-logo.jpg' | relative_url }}" id='sample-logo'></header>
+        <li><a href="{{ '/index' | relative_url }}">Home</a></li>
+        <li><a href="{{ '/sobre_nos' | relative_url }}">Sobre Nós</a></li>
+        <li><a href="{{ '/sp' | relative_url }}">São Paulo</a></li>
+        <li><a href="{{ '/rio' | relative_url }}">Rio de Janeiro</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section class="posts">
+            {% for post in site.posts %}
+                {% if post.local == "São Paulo" %}
+                    <article>
+                        <header>
+                            <h1>{{ post.title }}</h1>
+                            <p>{{ post.date }}</p>
+                        </header>
+                        <a class="click_here" href="{{ post.url | relative_url }}">Clique aqui para ler a review</a>
+                        <footer>
+                            <p>Escrito por {{ post.author }}.</p>
+                        </footer>
+                    </article>
+                {% endif %}
+            {% endfor %}
+        </section>
+    </main>
+    <footer id="rodape-principal">
+        Informações de Copyright 2020
+    </footer>
+</body>

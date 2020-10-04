@@ -1,6 +1,7 @@
 ---
 layout: default
 ---
+
 <body>
     <header id="cabecalho-principal">
         <h1 id="titulo_pag">Review de Mercados</h1>
@@ -11,28 +12,22 @@ layout: default
         <li><a href="{{ '/index' | relative_url }}">Home</a></li>
         <li><a href="{{ '/sobre_nos' | relative_url }}">Sobre Nós</a></li>
         <li><a href="{{ '/sp' | relative_url }}">São Paulo</a></li>
-        <li><a href="{{ '/rio' | relative_url }}">Rio de Janeiro</a></li>    
+        <li><a href="{{ '/rio' | relative_url }}">Rio de Janeiro</a></li>
         </ul>
     </nav>
     <main>
         <section class="posts">
-            {% for post in site.posts %}
-            <article>
+            <article class="article-1">
                 <header>
-                    <h1>{{ post.title }}</h1>
-                    <p>{{ post.date }}</p>
+                    <h1>Nós somos um grupo fictício criado por Bruno Maione para a primeira entrega de Sistemas de Informação</h1>
+                    <p>Obrigado pela curiosidade de nos visitar!</p>
                 </header>
-                <a class="click_here" href="{{ post.url | relative_url }}">Clique aqui para ler a review</a>
+                <img src="{{ '/assets/images/sobre_nos_pic.png' | relative_url }}" id='sobre_nos_pic' alt="random unsplash"/>
                 <footer>
-                    <p>Escrito por {{ post.author }} na categoria {{ post.local }}.</p>
+                    <p>Bruno Maione</p>
                 </footer>
             </article>
-            {% endfor %}
         </section>
-        <aside id="sidebar">
-            <p>Não existe uma pessoa que não tenha tido uma experiência ruim em um Mercado! Este blog existe para ajudá-lo a nunca mais ter uma dessas.</p>
-            <img src="{{ '/assets/images/icone-carrinho.png' | relative_url }}" id='icone-carrinho'>
-        </aside>
     </main>
     <footer id="rodape-principal">
         Informações de Copyright 2020

@@ -1,0 +1,9 @@
+---
+layout: post
+title:  "DIA Supermercado"
+date:   2020-08-08 19:56:19 -0300
+categories: sp
+author: "Bruno Maione"
+local: "São Paulo"
+---
+São Paulo

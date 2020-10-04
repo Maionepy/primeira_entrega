@@ -1,3 +1,161 @@
-body{
-color : green ;
+:root {
+    --primary-color: #000000;
+    --secondary-color: #ffffff;
+    --primary-background: #fbfbfc;
+    --secondary-background: #8babdb;
+    --tertiary-background: #F8BF32;
+    font-family: Montserrat, sans-serif;
+    font-size: 16px;
+    line-height: 1.5em;
+    
+}
+ 
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: var(--primary-background);
+    
+}
+ 
+#sample-logo{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    border-radius: 50%;
+}
+
+#sobre_nos_pic{
+    border-radius: 50%;
+}
+
+li, a {
+    color: var(--light);
+    text-decoration: none;
+}
+ 
+body {
+    display: flex;
+    flex-direction: column;
+}
+ 
+header#cabecalho-principal {
+    background: var(--secondary-background);
+    color: var(--primary-color);
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+ 
+nav#navegacao-principal {
+    background: var(--secondary-background);
+    color: var(--primary-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+ 
+nav#navegacao-principal ul {
+    margin: 0;
+    padding: 0;
+}
+ 
+nav#navegacao-principal li {
+    display: inline-block;
+    padding: 10px;
+}
+ 
+main {
+    align-self: center;
+    width: calc(100% - 60px);
+    display: grid;
+
+    grid-template-areas: "bx3 bx2"  "bx1 bx2";
+}
+ 
+.posts {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+    grid-area: bx3;
+}
+ 
+article {
+    display: grid;
+    padding: 30px
+}
+ 
+article header p {
+    font-size: 12px;
+}
+ 
+article footer {
+    color: gray;
+}
+ 
+article img {
+    width: 160px;
+}
+ 
+.other-section {
+    grid-area: bx1;
+}
+ 
+.other-section p {
+    padding-left: 30px;
+}
+ 
+aside {
+    margin: 50px 30px;
+    height: 80%;
+    max-width: 50%;
+    translate: 75%;
+    border: 15px  solid var(--secondary-background);
+    background-color: var(--tertiary-background);
+    color: var(--secondary-color);
+    grid-area: bx2;
+    text-align: center;
+}
+ 
+aside p {
+    padding: 20px;
+}
+ 
+footer#rodape-principal{
+    margin-top: 30px;
+    background: var(--secondary-background);
+    color: var(--primary-color);
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.click_here{
+    color:red;
+}
+
+#icone-carrinho{
+    filter: invert(100%);
+    scale: 50%;
+    width: 100%;
+    display: block;
+    margin-top: 0;
+    margin-bottom: auto;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+}
+
+#titulo_pag{
+    color: white;
+}
+
+li a{
+    color: white
 }
